@@ -39,7 +39,7 @@ if user_menu=='Car Price Prediction':
     year = st.selectbox("Select Year of Purchase:",Year)
 
     company=df['company'].unique()
-    company.sort()
+    # company.sort()
 
     company = st.selectbox(" Select the Company:",company)
 
@@ -48,7 +48,7 @@ if user_menu=='Car Price Prediction':
     kms_driven = st.selectbox("Select the Number of km that the car has travelled:",km)
 
     fuel=df['fuel_type'].unique()
-    fuel.sort()
+    # fuel.sort()
 
     fuel_type = st.selectbox("Select Fuel Type:",fuel)
 
@@ -105,20 +105,20 @@ if user_menu =='Bangalore House price Prediction':
 
     df1=pd.read_csv('cleaned_house.csv')
     location=df1['location'].unique()
-    location.sort()
+    # location.sort()
     location = st.selectbox("Select the Location:",location)
 
     sqft=df1['total_sqft'].unique()
-    sqft.sort()
+    # sqft.sort()
     total_sqft = st.selectbox("Select square feet:",sqft)
 
     bath=df1['bath'].unique()
-    bath.sort()
+    # bath.sort()
     bath=bath.astype(int)
     bath = st.selectbox("Select number of Bathrooms:",bath)
 
     bhk=df1['bhk'].unique()
-    bhk.sort()
+    # bhk.sort()
     bhk = st.selectbox("Select Bhk:",bhk)
 
     # Predict
