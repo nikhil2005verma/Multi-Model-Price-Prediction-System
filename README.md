@@ -107,7 +107,7 @@ This project is designed to predict prices across multiple domains using machine
 ## ▶️ Run the Project
 
 ```bash
-streamlit run app.py
+streamlit run application.py
 ```
 
 ---
